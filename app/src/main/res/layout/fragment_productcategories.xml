@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    style="@style/ThemeBackground"
+    android:id="@+id/parentView"
+    >
+    <include layout="@layout/layout_progress"/>
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_color"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"/>-->
+    <ExpandableListView
+        android:id="@+id/recyclerproductCategories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:groupIndicator="@null"
+        android:divider="@color/gray_color"
+        android:dividerHeight="0.1dp"
+        android:transcriptMode="alwaysScroll"
+        />
+
+
+</LinearLayout>
+

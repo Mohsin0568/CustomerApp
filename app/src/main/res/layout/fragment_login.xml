@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    style="@style/ThemeBackground"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/layout_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone/Email"
+            android:id="@+id/textViewUserName"
+            style="@style/TextViewStyle"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:ems="10"
+            android:id="@+id/editTextUserName"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_password"
+            android:id="@+id/textView"
+            style="@style/TextViewStyle" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890 "
+            android:maxLength="15"
+            android:id="@+id/editTextPassword"
+            style="@style/EditTextStyle"
+            />
+
+
+        <Button
+            android:text="@string/login"
+            android:id="@+id/buttonLogin"
+            style="@style/RaisedButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/buttonForgotPin"
+            android:text="@string/forgotpassword"
+            android:visibility="gone"
+            style="@style/FlatButtonStyle"/>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:text="@string/register"
+            style="@style/FlatButtonStyle"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

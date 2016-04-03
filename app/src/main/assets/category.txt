@@ -1,0 +1,1 @@
+{"issuccess":true,"categories":[{"categoryId":"1","categoryName":"Mens"},{"categoryId":"2","categoryName":"Womens"},{"categoryId":"3","categoryName":"Kids"}]}

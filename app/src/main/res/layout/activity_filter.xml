@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.templatexuv.apresh.customerapp.FilterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"/>
+
+    <View
+        android:id="@+id/headerSeperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_color"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerSeperator"
+        android:layout_above="@+id/bottomseperator"
+        android:orientation="horizontal">
+
+    <fragment
+        android:id="@+id/propertyFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:name="com.templatexuv.apresh.customerapp.PropertyFragment"
+        />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_color"/>
+    <fragment
+        android:id="@+id/valueFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:name="com.templatexuv.apresh.customerapp.ValueFragment"
+        />
+    </LinearLayout>
+    <View
+        android:id="@+id/bottomseperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_color"
+        android:layout_above="@+id/bottomLay"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:id="@+id/bottomLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:text="Cancel"
+            android:id="@+id/buttonCancel"
+            style="@style/RaisedButtonFilterStyle"/>
+        <Button
+            android:text="Apply"
+            android:id="@+id/buttonApply"
+            style="@style/RaisedButtonFilterStyle"/>
+    </LinearLayout>
+
+</RelativeLayout>

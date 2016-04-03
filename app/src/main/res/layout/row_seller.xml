@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/cv"
+    card_view:cardCornerRadius="4dp"
+
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:id="@+id/seller_preview"
+            android:src="@drawable/icon_user"
+            android:scaleType="fitXY"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seller_brand"
+                android:singleLine="true"
+                android:textColor="@color/theme_green_color"
+                android:text="title"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="2dp"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seller_id"
+                android:textColor="@color/red_color"
+                android:visibility="gone"
+                android:layout_marginLeft="2dp"
+                android:text="Rs.500"
+                android:layout_gravity="left"
+                android:textSize="16sp"
+                />
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    style = "?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:clickable="false"
+                    >
+                </RatingBar>
+
+
+  </LinearLayout>
+    </android.support.v7.widget.CardView>

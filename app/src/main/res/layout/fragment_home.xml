@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/ThemePlainBackground"
+    android:id="@+id/parentView"
+    >
+
+    <RelativeLayout
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/button_sellers"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white_color"
+            android:text="Sellers"
+            android:padding="10dp"
+            android:src="@drawable/ic_navigation_back"/>
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_sellers"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Search here..."
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/icon_search"
+            android:singleLine="true"
+            />
+        <ImageButton
+            android:id="@+id/icon_search"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent_color"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_search"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_progress"/>
+
+    <TextView
+        android:id="@+id/noProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Products"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:textStyle="bold"
+        />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:columnWidth="150dp"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="15dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none"
+        android:numColumns="auto_fit"></GridView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,225 @@
+<FrameLayout
+    android:id="@+id/containerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ThemePlainBackground"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingBottom="15dp"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_title"
+        android:id="@+id/productTitle"
+        style="@style/TextViewProductDetailsStyle"
+        android:textSize="@dimen/text_size_22"
+        />
+
+
+            <!--<ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/previewList"
+                android:layout_weight="2">
+            </ListView>-->
+
+
+        <ImageView
+            android:id="@+id/productPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:paddingTop="10dp"
+            android:adjustViewBounds="true"
+            android:paddingBottom="10dp"
+            android:src="@drawable/icon_cart_large"
+            />
+
+          <!--  <com.templatexuv.apresh.customerapp.util.AspectRatioImageView
+                android:id="@+id/productPreview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:maxHeight="300dp"
+                android:paddingTop="10dp"
+                android:adjustViewBounds="true"
+                android:paddingBottom="10dp"
+                android:src="@drawable/icon_cart_large"
+                />-->
+
+        <!--android:scaleType="fitXY"
+        android:fitsSystemWindows="true"-->
+
+           <!-- <Gallery
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/previewList"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+
+                android:spacing="10dp"
+                >
+
+            </Gallery>-->
+        <com.templatexuv.apresh.customerapp.util.HorizontalListView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/previewList"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone">
+        </com.templatexuv.apresh.customerapp.util.HorizontalListView>
+        <!--android:background="@color/cardview_light_background"-->
+
+        <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/productCost"
+           android:text="@string/cost"
+           style="@style/TextViewProductDetailsStyle"
+           android:textSize="@dimen/text_size_22"
+           />
+       <TextView
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:id="@+id/quantity"
+           android:layout_alignParentRight="true"
+           android:text="@string/quantity"
+           style="@style/TextViewProductDetailsNormalStyle"
+           />
+   </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dynamiclay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Quantity:"
+                android:id="@+id/selectedQuantityText"
+                android:textColor="@color/black_color"
+                style="@style/TextViewProductDetailsNormalStyle"
+                />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:id="@+id/selectedQuantity"
+                android:layout_toRightOf="@+id/selectedQuantityText"
+                android:text="1"
+                android:textColor="@color/black_color"
+                android:inputType="numberSigned"
+                android:digits="1234567890"
+                android:paddingLeft="10dp"
+                android:maxLength="7"
+                android:paddingRight="10dp"
+                style="@style/TextViewProductDetailsNormalStyle"
+                />
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDescription"
+        android:text="@string/product_description"
+        style="@style/TextViewProductDetailsNormalStyle"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ContactDetails"
+            android:id="@+id/contactdetails"
+            style="@style/TextViewProductDetailsStyle"
+            android:visibility="gone"
+            />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:id="@+id/email"
+                style="@style/TextViewProductDetailsNormalStyle"
+            android:visibility="gone"
+                />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:text="@string/phone"
+            android:visibility="gone"
+                style="@style/TextViewProductDetailsNormalStyle"
+                />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sellerComments"
+            android:text="Seller Comments \n Click here"
+            android:textColor="@color/red_color"
+            style="@style/TextViewProductDetailsNormalStyle"
+            />
+
+</LinearLayout>
+
+ </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom">
+        <ImageButton
+            android:layout_margin="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon_orders"
+            android:background="@drawable/fab_icon"
+            android:id="@+id/imageButton"
+             />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:indeterminate="true"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/productZoomView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:src="@drawable/icon_cart_large"
+        />
+
+    </FrameLayout>

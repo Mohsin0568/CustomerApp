@@ -1,0 +1,7 @@
+{
+"issuccess":true,
+"userid":"USR001",
+"name":"Apresh",
+"email":"apreshrokalla@gmail.com",
+"mobileNumber":"9618575227"
+}

@@ -1,0 +1,170 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/theme_green_color</item>
+        <item name="colorPrimaryDark">@color/theme_green_dark_color</item>
+        <item name="colorAccent">@color/theme_green_color</item>
+        <item name="colorButtonNormal">@color/theme_green_color</item>
+
+    </style>
+    <!--<item name="android:colorButtonNormal">@color/theme_green_color</item>-->
+
+    <style name="Theme_Dialog_Translucent" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- <item name="android:windowBackground">@color/transparent_color</item> -->
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ThemeBackground">
+        <item name="android:background">@color/themebg_color</item>
+        <item name="android:padding">25dp</item>
+    </style>
+
+    <style name="ThemeBackgroundNewProduct">
+        <item name="android:background">@color/themebg_color</item>
+        <item name="android:padding">25dp</item>
+    </style>
+
+    <style name="ThemePlainBackground">
+        <item name="android:background">@color/themebg_color</item>
+    </style>
+        <style name="CategoryButtonBackground">
+            <item name="android:background">@drawable/category_bg_selector</item>
+        </style>
+
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/theme_green_dark_color</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewProductDetailsStyle">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/theme_green_dark_color</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="TextViewProductDetailsNormalStyle">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/theme_green_dark_color</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="TextLinkStyle">
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:textColor">@color/red_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="TextViewAppNameStyle">
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="TextViewAppVersionStyle">
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="CommonStyle">
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="EditTextCommonStyle">
+        <item name="android:height">48dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+
+    <style name="EditTextStyle" parent="EditTextCommonStyle">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="EditTextAddressStyle" parent="EditTextCommonStyle">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">4</item>
+    </style>
+
+
+    <style name="EditTextMultiStyle" parent="EditTextCommonStyle">
+        <item name="android:maxLines">4</item>
+    </style>
+
+    <style name="EditTextHintStyle" parent="EditTextCommonStyle">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditTextNormalStyle" parent="EditTextCommonStyle">
+
+    </style>
+
+    <style name="RaisedButtonFilterStyle">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
+
+
+    <style name="RaisedButtonStyle">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
+
+    <style name="FlatButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:height">36dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">@color/red_color</item>
+    </style>
+
+
+</resources>

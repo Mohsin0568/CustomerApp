@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/ThemePlainBackground"
+    android:paddingTop="40dp"
+    android:id="@+id/parentView"
+    >
+
+    <TextView
+        android:id="@+id/noProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Products"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textStyle="bold"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/noProducts"
+        android:layout_height="wrap_content"
+        android:paddingTop="?attr/actionBarSize"
+        android:clipToPadding="false"/>
+
+    <LinearLayout
+        android:id="@+id/optionsLay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:background="@color/white_color"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/filterLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/filterIcon"
+                android:src="@drawable/icon_filter"/>
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/filterIcon"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black_color"
+                android:layout_centerInParent="true"
+                android:text="Filter"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@color/black_color"
+            android:layout_gravity="center"
+            />
+        <RelativeLayout
+            android:id="@+id/sortByLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/sortIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_sort"/>
+            <TextView
+                android:id="@+id/sortBy"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sortIcon"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black_color"
+                android:layout_centerInParent="true"
+                android:text="Sort By"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color"
+        android:layout_gravity="center"
+        />
+
+    <include
+        layout="@layout/layout_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
+
+

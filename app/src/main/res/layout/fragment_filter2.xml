@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.templatexuv.apresh.customerapp.FilterFragment"
+    style="@style/ThemePlainBackground">
+
+    <include layout="@layout/layout_progress"/>
+
+    <TextView
+        android:id="@+id/noFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Filters"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:id="@+id/dynamiclay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/dynamiclay"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white_color"
+        android:text="Apply"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_navigation_back"/>
+
+</RelativeLayout>

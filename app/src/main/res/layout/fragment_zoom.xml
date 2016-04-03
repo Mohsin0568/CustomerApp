@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.templatexuv.apresh.customerapp.ZoomFragment2"
+    android:orientation="vertical"
+    style="@style/ThemePlainBackground"
+    android:paddingTop="?attr/actionBarSize">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+
+        android:layout_above="@+id/previewList"
+        android:layout_height="match_parent" />
+
+    <com.templatexuv.apresh.customerapp.util.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignBaseline="@+id/pager"
+        android:paddingBottom="8dp"
+        android:visibility="gone"/>
+
+    <com.templatexuv.apresh.customerapp.util.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/previewList"
+        android:layout_alignParentBottom="true"
+        >
+    </com.templatexuv.apresh.customerapp.util.HorizontalListView>
+</RelativeLayout>

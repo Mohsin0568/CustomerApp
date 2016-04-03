@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/ThemePlainBackground"
+    android:id="@+id/parentView"
+    >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:divider="@color/transparent_color"
+        android:choiceMode="singleChoice"
+        android:layout_above="@+id/buttonAddAddress"
+        android:scrollbars="none"
+        android:descendantFocusability="beforeDescendants"
+        ></ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/noitems"
+        android:text="No Address"/>
+    <include layout="@layout/layout_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/buttonAddAddress"
+        android:text="Add New Address"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/buttonProceed"
+        style="@style/RaisedButtonStyle"/>
+
+    <Button
+        android:id="@+id/buttonProceed"
+        android:text="Proceed"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        style="@style/RaisedButtonStyle"
+        android:visibility="gone"/>
+</RelativeLayout>
+

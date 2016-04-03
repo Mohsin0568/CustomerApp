@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    style="@style/ThemeBackground"
+    android:id="@+id/parentView"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/layout_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/textViewName"
+            style="@style/TextViewStyle"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:ems="10"
+            android:id="@+id/editTextName"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:id="@+id/textViewPhone"
+            style="@style/TextViewStyle"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:ems="10"
+            android:id="@+id/editTextPhone"
+            android:inputType="number"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/textAddress"
+            style="@style/TextViewStyle" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/editTextAddress"
+            style="@style/EditTextStyle"
+            android:singleLine="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Landmark"
+            android:id="@+id/textLandmark"
+            style="@style/TextViewStyle" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLandMark"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:id="@+id/textCity"
+            style="@style/TextViewStyle" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCity"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PinCode"
+            android:id="@+id/textPinCode"
+            style="@style/TextViewStyle" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:id="@+id/editTextPinCode"
+            style="@style/EditTextStyle"
+            />
+
+        <Button
+            android:text="Save"
+            android:id="@+id/buttonSave"
+            style="@style/RaisedButtonStyle"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

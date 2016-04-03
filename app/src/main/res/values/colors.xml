@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme_green_color">#009000</color>
+    <color name="theme_green_dark_color">#004400</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="black_color">#000000</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="text_turquoise_color">#40E0D0</color>
+    <color name="text_click_color">#00AA92</color>
+    <color name="red_color">#FF1E19</color>
+    <color name="hint_color">#737373</color>
+    <color name="blue_color">#00FFFF</color>
+    <color name="orange_color">#F89E1D</color>
+    <color name="ash_coclor">#eeeeee</color>
+    <color name="green_color">#00A992</color>
+    <color name="gray_color">#989898</color>
+    <color name="edit_text_hint_light">#B5B3B4</color>
+    <color name="seperator_color">#F4F4F4</color>
+    <color name="black_light">#4B4B4B</color>
+    <color name="light_grey">#D3D3D3</color>
+
+    <color name="orange_focus_color">#16677f</color>
+    <color name="text_white_color">#FFFFFF</color>
+    <color name="theme_blue_color">#2EB3DB </color>
+    <color name="text_orange_color">#F89E1D</color>
+
+    <color name="menu_bg">#101F2D</color>
+
+    <color name="themebg_color">#E8E8E8</color>
+
+    <color name="categories_bg">#FFd700</color>
+    <color name="subcategories_bg">#EEE8AA</color>
+
+</resources>

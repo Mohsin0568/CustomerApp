@@ -1,0 +1,112 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ThemeBackground"
+    android:padding="5dp"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/headingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:ellipsize="marquee"
+            android:textSize="@dimen/text_16"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="@color/black_color"
+            android:background="#FFFACD"
+            android:textAlignment="inherit"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/product_title"
+        android:id="@+id/editTextTitle"
+        style="@style/EditTextHintStyle"
+        />
+
+    <LinearLayout
+        android:id="@+id/dynamiclay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextQuantity"
+            android:hint="@string/quantity"
+            android:maxLength="5"
+            android:inputType="number"
+            style="@style/EditTextMultiStyle"
+    />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCost"
+            android:hint="@string/cost"
+            android:maxLength="10"
+            android:inputType="number"
+            style="@style/EditTextMultiStyle"
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/editTextDescription"
+        android:gravity="top"
+        android:hint="@string/product_description"
+        style="@style/EditTextMultiStyle"
+        />
+
+
+
+       <ImageView
+            android:id="@+id/imgCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/CommonStyle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_image_capture"
+           />
+
+            <com.templatexuv.apresh.customerapp.util.ExpandableGridView
+                android:id="@+id/gridGallery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="-10dp"
+                android:horizontalSpacing="1dp"
+                android:isScrollContainer="false"
+                android:numColumns="3"
+                android:padding="0dp"
+                android:verticalSpacing="-15dp"
+                android:visibility="gone"
+                tools:listitem="@layout/gallery_item" >
+            </com.templatexuv.apresh.customerapp.util.ExpandableGridView>
+
+        <Button
+            android:text="@string/add_new_product"
+            android:id="@+id/buttonaddProduct"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            style="@style/RaisedButtonStyle"/>
+
+</LinearLayout>
+ </ScrollView>

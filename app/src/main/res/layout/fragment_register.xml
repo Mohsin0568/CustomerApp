@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    style="@style/ThemeBackground"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <include layout="@layout/layout_progress"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
+            android:text="@string/firstName"
+            android:id="@+id/textViewFirstName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            style="@style/EditTextStyle"
+            android:ems="10"
+            android:id="@+id/editTextFirstName"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
+            android:text="@string/lastName"
+            android:id="@+id/textViewLastName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            style="@style/EditTextStyle"
+            android:ems="10"
+            android:id="@+id/editTextLastName"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:id="@+id/textView"
+            style="@style/TextViewStyle" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890 "
+            android:ems="10"
+            android:maxLength="15"
+            android:id="@+id/editTextPassword"
+            style="@style/EditTextStyle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmpassword"
+            android:id="@+id/confirmtextView"
+            style="@style/TextViewStyle" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890 "
+            android:ems="10"
+            android:maxLength="15"
+            android:id="@+id/editTextConfirmPassword"
+            style="@style/EditTextStyle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:id="@+id/textViewEmail"
+            style="@style/TextViewStyle"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextEmail"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:id="@+id/textViewPhone"
+            style="@style/TextViewStyle"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editTextPhone"
+            android:maxLength="14"
+            style="@style/EditTextStyle"
+            />
+
+        <Button
+            android:text="@string/register"
+            android:id="@+id/buttonRegistration"
+            style="@style/RaisedButtonStyle"/>
+
+    </LinearLayout>
+
+</ScrollView>
